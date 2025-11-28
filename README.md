@@ -1,14 +1,5 @@
 Padrão Singleton:
 O padrão Singleton é um padrão de projeto criacional que garante que uma classe só tenha uma única instância durante toda a execução do programa. Além disso, fornece um ponto de acesso global para essa instância, ou seja, qualquer parte do sistema pode usar o mesmo objeto único.​
-
-undefined
-classDiagram
-class Singleton {
-- static Singleton instance
-- Singleton()
-+ static Singleton getInstance()
-  }
-  undefined
   
 Problemas que ele pode pode resolver:
 Existem situações em sistemas onde precisamos que apenas uma instância de uma classe exista. Como:
@@ -26,3 +17,9 @@ O construtor é privado, então você não pode instanciar direto (new).
 Um atributo estático armazena a instância única.
 Um método público retorna sempre essa mesma instância.
 Em sistemas concorrentes, implementações avançadas usam mecanismos de proteção para garantir que a instância não seja criada duas vezes (thread-safety).
+
+O diagrama mostra:
+- Atributo privado estático `instance` que armazena a única instância
+- Construtor privado que impede criação direta
+- Método público `getInstance()` que é o ponto global de acesso
+
