@@ -19,7 +19,7 @@ Um método público retorna sempre essa mesma instância.
 Em sistemas concorrentes, implementações avançadas usam mecanismos de proteção para garantir que a instância não seja criada duas vezes (thread-safety).
 
 O diagrama mostra:
-![Diagrama Singleton](imgS/diagrama-singleton.png)
+![Diagrama Singleton](imgS/Singleton.drawio.png)
 
 
 - Atributo privado estático `instance` que armazena a única instância
