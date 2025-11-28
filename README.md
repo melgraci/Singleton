@@ -1,6 +1,15 @@
 Padrão Singleton:
 O padrão Singleton é um padrão de projeto criacional que garante que uma classe só tenha uma única instância durante toda a execução do programa. Além disso, fornece um ponto de acesso global para essa instância, ou seja, qualquer parte do sistema pode usar o mesmo objeto único.​
 
+undefined
+classDiagram
+class Singleton {
+- static Singleton instance
+- Singleton()
++ static Singleton getInstance()
+  }
+  undefined
+  
 Problemas que ele pode pode resolver:
 Existem situações em sistemas onde precisamos que apenas uma instância de uma classe exista. Como:
 Um gerenciador de configurações: para garantir que a configuração usada seja sempre a mesma em todo o sistema.
