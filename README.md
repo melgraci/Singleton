@@ -19,6 +19,9 @@ Um método público retorna sempre essa mesma instância.
 Em sistemas concorrentes, implementações avançadas usam mecanismos de proteção para garantir que a instância não seja criada duas vezes (thread-safety).
 
 O diagrama mostra:
+
+
+
 ![Diagrama Singleton](Singleton.drawio.png)
 
 
